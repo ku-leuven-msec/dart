@@ -7,7 +7,7 @@ permalink: /blog/
 <div class="hero-section" style="background: linear-gradient(135deg, rgba(0, 150, 210, 0.85) 0%, rgba(26, 188, 156, 0.85) 100%), url('/assets/images/john-adams-1xIN4FMR78A-unsplash.jpg') center/cover; background-attachment: fixed; min-height: 300px;">
   <div style="max-width: 900px;">
     <h1>📝 Blog</h1>
-    <p>Insights, updates, and stories from the Secure Smart Buildings team.</p>
+    <p>Insights, updates, and stories from the DART team.</p>
   </div>
 </div>
 <!--Photo by <a href="https://unsplash.com/@s_tsuchiya?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Se. Tsuchiya</a> on <a href="https://unsplash.com/photos/green-and-white-computer-ram-stick-sPLLVFJXlb8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->

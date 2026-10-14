@@ -3,38 +3,39 @@ layout: default
 title: Home
 ---
 
+<!-- TODO: replace the hero background image with a DART-specific image (see IMAGES_GUIDE.md) -->
 <div class="hero-section" style="background: linear-gradient(135deg, rgba(0, 150, 210, 0.85) 0%, rgba(0, 120, 180, 0.85) 100%), url('/assets/images/john-adams-1xIN4FMR78A-unsplash.jpg') center/cover; background-attachment: fixed;">
   <div style="max-width: 900px;">
-    <h1>🏢 Secure Smart Buildings</h1>
-    <h2 style="color: white; border: none; padding: 0; margin: 0;">Cyberveiligheid voor slimme gebouwen</h2>
-    <p>Het verwerven van inzicht in adequate beveiliging, relevante regelgeving en beveiligingsstandaarden voor slimme gebouwen. Een TETRA-project voor fabrikanten, integratoren, bouwheren, gebouwbeheerders en dienstverleners.</p>
-    <p><a href="#about" class="btn" style="margin-top: 20px;">Meer info</a></p>
+    <h1>🎯 DART</h1>
+    <h2 style="color: white; border: none; padding: 0; margin: 0;">Intelligent Detection, Response and Analysis of Security Events</h2>
+    <p>Helping SMEs, non-profits and their service providers build feasible, NIS2-aligned detection and incident response capabilities. A TETRA project funded by VLAIO.</p>
+    <p><a href="#about" class="btn" style="margin-top: 20px;">Learn more</a></p>
   </div>
 </div>
 
 <div class="capabilities-section">
   <div class="wrapper">
-    <h2>Speerpunten</h2>
+    <h2>Focus areas</h2>
     <div class="capabilities-grid">
       <div class="capability-card">
+        <div class="icon">⚖️</div>
+        <h3>Risk &amp; compliance</h3>
+        <p>Translating NIS2, GDPR and frameworks such as NIST CSF 2.0 and CyFun® into concrete, proportionate technical requirements.</p>
+      </div>
+      <div class="capability-card">
         <div class="icon">🔍</div>
-        <h3>Beveiligingsinzichten</h3>
-        <p>Inzicht in hedendaagse aanvallen, kwetsbaarheden en beveiligingstechnologieën voor slimme gebouwen.</p>
+        <h3>Detection</h3>
+        <p>Baseline detection, threat intelligence and detection-as-code templates for a reproducible security monitoring setup.</p>
       </div>
       <div class="capability-card">
-        <div class="icon">🛡️</div>
-        <h3>Best Practices & tools</h3>
-        <p>Praktische richtlijnen en tools die de veerkracht van slimme gebouwen verhogen.</p>
+        <div class="icon">🚨</div>
+        <h3>Triage &amp; response</h3>
+        <p>Decision trees, playbooks-as-code and AI assistance to reduce alert fatigue and shorten the time from detection to response.</p>
       </div>
       <div class="capability-card">
-        <div class="icon">👥</div>
-        <h3>Gebruikersgroep</h3>
-        <p>Kennisdisseminatie via seminaries en workshops.</p>
-      </div>
-      <div class="capability-card">
-        <div class="icon">🔧</div>
-        <h3>Veilige werkwijzen</h3>
-        <p>Methodologieën gericht op cyberveiligheid in installatie, onderhoud en dienstverlening.</p>
+        <div class="icon">📋</div>
+        <h3>Post-incident</h3>
+        <p>Templates for legal incident reporting and structured post-incident analysis that feeds lessons learned back into detection.</p>
       </div>
     </div>
   </div>
@@ -42,22 +43,22 @@ title: Home
 
 <div class="three-levels-section">
   <div class="wrapper">
-    <h2>Projectdoelstellingen</h2>
+    <h2>Across the incident lifecycle</h2>
     <div class="levels-container">
       <div class="level-card">
         <div class="level-number">1</div>
-        <h3>People</h3>
-        <p>Stakeholders beschikken over de juiste kennis, vaardigheden en bewustzijn om cyberveiligheid correct toe te passen en ermee om te gaan.</p>
+        <h3>Pre-incident</h3>
+        <p>Detect: prioritised data sources, rule-based detection and automated configuration and rollout of security tooling.</p>
       </div>
       <div class="level-card">
         <div class="level-number">2</div>
-        <h3>Process</h3>
-        <p>Beveiliging is ingebed in duidelijke processen voor implementatie, opvolging en bijsturing over de volledige levenscyclus.</p>
+        <h3>At-incident</h3>
+        <p>Respond: fast, proportionate triage, containment and response, whether handled in-house or outsourced.</p>
       </div>
       <div class="level-card">
         <div class="level-number">3</div>
-        <h3>Technology</h3>
-        <p>Inzet van passende technologische oplossingen ter ondersteuning van beveiliging en cyberveerkracht van slimme gebouwen.</p>
+        <h3>Post-incident</h3>
+        <p>Analyse: correct and timely reporting to authorities (CCB/GBA) and structural lessons learned.</p>
       </div>
     </div>
   </div>
@@ -65,53 +66,60 @@ title: Home
 
 
 <a id="about"></a>
-# Over Secure Smart Buildings
+# About DART
 
-Dit project richt zich op het verbeteren van cyberveiligheid in slimme gebouwen door middel van praktijkgericht onderzoek en kennisdeling.
+DART closes the gap between what regulation expects of detection and incident response and what Flemish SMEs and non-profit organisations can realistically do. Through practice-oriented research, the project delivers context-aware guidelines, methodologies and reference architectures that help these organisations and their service providers organise detection and response in a feasible way.
 
-## De Uitdaging
+## The challenge
 
-Door de opkomst van slimme gebouwen is het voor alle stakeholders een uitdaging om snel en effectief inzicht te verwerven in adequate beveiliging, relevante regelgeving en beveiligingsstandaarden. Het verwerven van een diepgaand inzicht in dit complexe domein is van essentieel belang om proactief in te spelen op toekomstige uitdagingen. Bovendien kan cyberveiligheid net leiden tot een competitief voordeel voor alle partijen.
+With the NIS2 directive, European organisations, including many Flemish SMEs, face growing pressure to strengthen their cyber resilience. Many have taken measures to *identify* and *protect*, but detection and incident response remain the least mature parts of their security approach.
 
-## Onze Missie
+At the same time, ICT environments keep getting more complex. Cloud, network, IoT and industrial (OT) environments generate large volumes of security events. That data makes fast detection possible, but most SMEs and non-profits lack the expertise and resources to use it. Available security solutions are often built for large enterprises and don't match the cost, complexity or skills of smaller organisations. Security teams struggle with *alert fatigue*, while *dwell time*, the time an attacker stays unnoticed, remains too high.
 
-We maken praktijkgerichte beveiligingskennis en methodologieën toegankelijk voor fabrikanten, integratoren, bouwheren, gebouwbeheerders en dienstverleners. Onze focus ligt op het aanreiken van tools, richtlijnen en expertise aan Vlaamse bedrijven in het domein van slimme gebouwen om hun kwetsbaarheid voor cyberaanvallen te verminderen en hun veerkracht te vergroten.
+## Our approach
 
-## Doelgroep
+The building blocks already exist. What is missing is their translation to the SME context. DART focuses on lowering the operational burden through context-specific configuration and automation, rather than adding more and larger tools. Concretely, the project explores:
 
-<p>Het project richt zich op:</p>
-<br>
-- **Fabrikanten**: Ontwikkelen apparaten, sensoren en toepassingen voor slimme gebouwen
-- **Integratoren**: Integreren en implementeren slimme oplossingen bij klanten
-- **Bouwheren & gebouwbeheerders**: Zijn eigenaar en/of verantwoordelijk voor het beheer van slimme gebouwen
-- **Dienstverleners**: Staan in voor de installatie, het onderhoud en de ondersteuning
+- **Detection-as-code and configuration-as-code** for reproducible, verifiable security setups
+- **Playbooks-as-code** for automated containment of common, low-risk incidents
+- **Generative AI and AI agents** as a "copilot" that turns natural-language risk descriptions into detection rules, and that supports triage and filtering of false positives
+- **Tool-agnostic, open standards** wherever possible, so results don't depend on one vendor
+
+## Target groups
+
+The project addresses three sub-target groups:
+
+- **Cybersecurity and IT service providers and integrators**: need scalable, modular methods to offer detection and response services cost-effectively to many smaller clients
+- **Organisations with in-house or hybrid security operations**: monitor their environment but lack the resources for a 24/7 SOC or complex enterprise tooling (SIEM, SOAR)
+- **Organisations in the awareness phase**: have not yet implemented detection and response, and are reached through targeted knowledge dissemination
 
 ---
 
-## Projectdoelstellingen
+## Expected results
 
-1. **Beveiligingsinzichten** - Verstrekken van inzichten met betrekking tot hedendaagse aanvallen, veelvoorkomende kwetsbaarheden, en beveiligingstechnologieën die tijdens de ontwikkeling kunnen helpen
+1. **A practical framework** for interpreting and prioritising cyber risks and legal obligations around monitoring, incident handling and reporting
+2. **Practical guidelines** for setting up security operations in line with risk profile, maturity and available resources, without compromising compliance
+3. **Standardised workflows and playbook templates** for triage and response, usable without a permanent SOC or specialised security experts
+4. **Reference architectures** for detection and alert processing, focused on filtering, correlation and contextual enrichment of alerts
+5. **A practical security guide**, *"From Detection to Response"*, bundling all insights, guidelines and tools
 
-2. **Best Practices & Tools** - Aanreiken van best practices en tools die de veerkracht van slimme gebouwen verhogen
-
-3. **Veilige Methodologieën** - Aanbieden van methodologieën om op een effectieve en veilige manier diensten zoals installatie en onderhoud te verwezenlijken
-
-4. **Kennisdisseminatie** - Organiseren van seminaries en workshops voor kennisdeling met de industrie
+All results are validated in representative cases together with members of the advisory group, and are made publicly available as open source at the end of the project.
 
 ---
 
 ## Partners
 
-<p>Dit TETRA-project wordt uitgevoerd door:</p>
+<p>This TETRA project is carried out by:</p>
 <br>
-- **KU Leuven - DistriNet Campus Gent** (Projectleider): Onderzoeksgroep gespecialiseerd in gedistribueerde systemen, softwareveiligheid en systeemveiligheid
-- **UCLL - Expertisecentrum Sustainable Resources**: Hogeschool met expertise in duurzame energiesystemen en technologie-integratie
+- **KU Leuven – DistriNet, Campus Gent** (project lead): secure distributed systems, IoT, network security, cybersecurity standards and AI for security
+- **Vrije Universiteit Brussel – Software Languages Lab (SOFT)**: event-driven architectures, rule-based systems and declarative programming
 
-Het project wordt gefinancierd door **VLAIO** (Vlaams Agentschap Innoveren & Ondernemen) in het kader van het TETRA-programma.
+The project is funded by **VLAIO** (Flanders Innovation & Entrepreneurship) within the TETRA programme, using earmarked funds of the Flemish Cybersecurity research programme.
 
 ---
 
 <div style="text-align: center; margin: 3em 0;">
-  <a href="{{ '/knowledge-dissemination/' | relative_url }}" class="btn">Bekijk Bijeenkomsten & Evenementen</a>
-  <a href="{{ '/consortium/' | relative_url }}" class="btn">Ontdek de Partners</a>
+  <a href="{{ '/project/' | relative_url }}" class="btn">Explore the work plan</a>
+  <a href="{{ '/knowledge-dissemination/' | relative_url }}" class="btn">Events &amp; results</a>
+  <a href="{{ '/consortium/' | relative_url }}" class="btn">Meet the partners</a>
 </div>

@@ -1,7 +1,8 @@
-title: "Secure Smart Buildings"
-description: "A TETRA project focused on cybersecurity for smart buildings, IoT systems, and building management"
+title: "DART"
+description: "DART – Intelligent Detection, Response and Analysis of Security Events. A TETRA project helping Flemish SMEs and non-profits build feasible, NIS2-aligned detection and incident response capabilities."
+lang: en
 baseurl: ""
-url: "https://ssb.projects.cybersecurity-research.be"
+url: "https://dart.projects.cybersecurity-research.be"
 
 # Build settings
 plugins:
@@ -11,18 +12,28 @@ plugins:
 # Navigation
 header_pages:
   - index.md
+  - project.md
   - knowledge-dissemination.md
   - consortium.md
 
 # Project information
 project:
-  start_date: "2024"
-  type: "TETRA Project"
+  acronym: "DART"
+  full_name: "Intelligent Detection, Response and Analysis of Security Events"
+  start_date: "TBD"   # TODO: fill in official start date
+  duration: "24 months"
+  type: "TETRA Project (VLAIO – Cybersecurity programme)"
   lead: "KU Leuven - DistriNet Campus Gent"
 
 # Exclude from processing
 exclude:
   - README.md
+  - CONTRIBUTING.md
+  - DESIGN_IMPROVEMENTS.md
+  - DESIGN_SUMMARY.md
+  - FOOTER_LOGOS.md
+  - IMAGES_GUIDE.md
+  - QUICKSTART_DESIGN.md
   - Gemfile
   - Gemfile.lock
   - node_modules

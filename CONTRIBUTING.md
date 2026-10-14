@@ -1,6 +1,6 @@
-# Contributing to the Secure Smart Buildings Website
+# Contributing to the DART Website
 
-Thank you for contributing to the Secure Smart Buildings project website! This guide will help you add content and make updates.
+Thank you for contributing to the DART project website! This guide will help you add content and make updates.
 
 ## Quick Start
 
@@ -163,17 +163,17 @@ bundle exec jekyll serve
 ## Getting Help
 
 - **Technical issues:** Open an issue in the repository
-- **Content questions:** Contact ssb@distrinet.cs.kuleuven.be
+- **Content questions:** Contact the project team (see the Partners page)
 
 ## Review Process
 
 All contributions are welcome! Changes pushed to the main branch will:
 1. Trigger automatic builds (GitHub Actions)
 2. Deploy to the live site (usually within 2-5 minutes)
-3. Be visible at https://ku-leuven-msec.github.io/bugatti
+3. Be visible at https://dart.projects.cybersecurity-research.be
 
 For major changes, consider:
 - Opening a pull request for review
 - Discussing with the project team first
 
-Thank you for contributing to BUGATTI!
+Thank you for contributing to DART!

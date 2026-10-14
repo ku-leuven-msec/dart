@@ -1,7 +1,10 @@
 <header class="site-header">
   <div class="wrapper">
     <a class="site-title" href="{{ '/' | relative_url }}">
-      <img src="{{ site.baseurl }}/assets/images/LogoV2.png" alt="Secure Smart Buildings Logo" class="logo-icon" style="height: 40px; width: auto;">
+      {%- comment -%} TODO: replace the text logo with an image once a DART logo is available, e.g.
+      <img src="{{ site.baseurl }}/assets/images/dart-logo.png" alt="DART Logo" class="logo-icon" style="height: 40px; width: auto;">
+      {%- endcomment -%}
+      <span class="logo-text">🎯 DART</span>
     </a>
     <nav class="site-nav">
       {%- for path in site.header_pages -%}

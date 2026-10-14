@@ -1,167 +1,105 @@
-# Secure Smart Buildings Project Website
+# DART Project Website
 
+This repository hosts the static website for **DART – Intelligent Detection, Response and Analysis of Security Events**, a VLAIO TETRA project carried out by KU Leuven DistriNet (Campus Gent, project lead) and the VUB Software Languages Lab (SOFT).
 
-This repository hosts the static website for the Secure Smart Buildings (SSB) project — a TETRA project led by KU Leuven's DistriNet research group in partnership with UCLL.
-
-🌐 **Live Site:** [https://ssb.projects.cybersecurity-research.be](https://ssb.projects.cybersecurity-research.be)
+🌐 **Live Site:** [https://dart.projects.cybersecurity-research.be](https://dart.projects.cybersecurity-research.be)
 
 ## About the Project
 
-Secure Smart Buildings focuses on enhancing cybersecurity for intelligent building systems. The project delivers:
-- Security insights about attacks, vulnerabilities, and technologies for smart buildings
-- Best practices and tools to increase resilience
-- Methodologies for secure installation and management of building systems
-- User group meetings and knowledge dissemination with industry stakeholders
+DART helps Flemish SMEs, non-profits and their service providers build feasible, NIS2-aligned detection and incident response capabilities. The project delivers:
+- A practical framework for interpreting cyber risks and legal obligations (NIS2, GDPR)
+- Guidelines, workflows and playbook templates for detection, triage, response and reporting
+- Reference architectures and an open repository of detection rules and automation playbooks
+- A testbed with demonstrators, and the practical guide *"From Detection to Response"*
 
+## Website Structure
 
-## Website Structure & Features
+Built with Jekyll and GitHub Pages.
 
-The website is built with Jekyll and GitHub Pages, using custom SCSS and layouts for a modern, professional look. Key sections include:
+- **Home** (`index.md`): project overview
+- **Project** (`project.md`): work packages and deliverables
+- **Knowledge Dissemination** (`knowledge-dissemination.md`): meetings, events, publications and results
+- **Partners** (`consortium.md`): research partners, contacts and advisory group
+- **Blog** (`blog.md`, posts in `_blog/`): articles, not in the main navigation
 
-- **Home** (`index.md`): Project overview and objectives
-- **Knowledge Dissemination** (`knowledge-dissemination.md`): Events, workshops, and knowledge sharing
-- **Blog** (`blog.md`): In-depth articles and insights
-- **Presentations** (`presentations.md`): Meeting presentations and materials (PDFs in `assets/presentations/`)
-- **Consortium** (`consortium.md`): Research partners, contact info, and funding
-
-Other features:
-- Modern favicon and browser icon support (SVG, PNG, ICO, Apple touch)
-- Email addresses are obfuscated for privacy
-- Responsive, visually improved footer and hero sections
-
-## Updating the Website
-
-### Prerequisites
-
-To test the site locally:
+Placeholders that still need content are marked with `TODO` comments or `[Name]` / `Date TBA`:
 
 ```bash
-# Install Ruby and Bundler
+grep -rn "TODO\|\[Name\]\|TBA" --include=*.md --include=*.html --include=*.yml .
+```
+
+## Running Locally
+
+```bash
 gem install bundler
-
-# Install dependencies
 bundle install
-
-# Run local server
 bundle exec jekyll serve
-
 # Visit http://localhost:4000
 ```
 
+## Adding Content
 
-### Adding a Presentation
+### An advisory group meeting
 
-1. **Upload PDF file:**
-   ```bash
-   cp your-presentation.pdf assets/presentations/
-   ```
+Edit the matching section in `knowledge-dissemination.md`: replace `Date TBA` and fill in the agenda.
 
-2. **Create or update a markdown entry in `presentations.md`** to link to your PDF:
+### An event with presentations
+
+1. Put the PDFs in `assets/events/<YYYY_MM_DD name>/` (PDFs are stored with Git LFS).
+2. Create `_dissemination/<YYYY-MM-DD-name>.md`:
+
    ```markdown
-   - [Your Presentation Title](/assets/presentations/your-presentation.pdf) — Speaker Name, 2025-03-15
+   ---
+   layout: event
+   title: "Event title"
+   date: 2027-01-15
+   event_type: "Advisory Group Meeting + Workshop"
+   ---
+
+   # Event title
+
+   **Date:** January 15, 2027
+   **Location:** ...
+
+   ## Presentations
+
+   {% include presentation-card.html
+      href="/assets/events/2027_01_15%20Kickoff/1.%20Intro.pdf"
+      title="Introduction"
+      speaker="J. Doe"
+      company="Optional company" %}
    ```
 
-3. **Commit and push:**
-   ```bash
-   git add assets/presentations/your-presentation.pdf presentations.md
-   git commit -m "Add presentation from Q1 meeting"
-   git push
-   ```
+The event is listed automatically under *Event Materials* on the Knowledge Dissemination page.
 
-The presentation will appear on the Presentations page.
+### A blog post
 
+Create `_blog/<name>.md`:
 
-### Events & Knowledge Dissemination
-
-Events, workshops, and knowledge sharing are managed in `knowledge-dissemination.md` and the `_dissemination/` collection. Add or update event entries as markdown files or directly in the main page.
-
-
-### Updating Consortium Information
-
-Edit `consortium.md` to:
-- Add or update research partners and contact info
-- Add or update funding and logos (place in `assets/images/`)
-- Update collaboration opportunities
-
-
-### Modifying Site Configuration
-
-Edit `_config.yml` to change:
-- Site title and description
-- Navigation menu items (under `header_pages`)
-- Project metadata
-
-## GitHub Pages Deployment
-
-The site automatically deploys when changes are pushed to the main branch:
-
-1. Push changes to repository
-2. GitHub Actions builds the site
-3. Site is published to `gh-pages` branch
-4. Changes appear at https://ku-leuven-msec.github.io/bugatti
-
-### Enable GitHub Pages
-
-In repository settings:
-1. Go to **Settings** > **Pages**
-2. Source: Deploy from a branch
-3. Branch: Select `gh-pages` or `main` (depending on configuration)
-4. Folder: `/ (root)` or `/docs`
-5. Save
-
-## File Structure
-
-```
-bugatti/
-├── _config.yml              # Jekyll configuration
-├── _blog/                  # Blog articles (markdown)
-├── _dissemination/         # Event and knowledge dissemination entries
-├── assets/
-│   └── presentations/       # PDF files for presentations
-├── index.md                 # Home page
-├── presentations.md         # Presentations listing page
-├── consortium.md            # Consortium information
-├── Gemfile                  # Ruby dependencies
-└── README.md               # This file
-```
-
-
-## Customization
-
-### Styling
-
-The site uses a custom SCSS file (`assets/css/style.scss`) and custom layouts in `_layouts/` for a modern, professional look. You can further customize by editing these files or adding new ones.
-
-### Adding New Pages
-
-Create a new markdown file with front matter:
-
-```yaml
+```markdown
 ---
-layout: page
-title: "Page Title"
-permalink: /page-url/
+layout: blog
+title: "Post title"
+author: J. Doe
+date: 2027-01-15
+reading_time: "5 min read"
+excerpt: "One-sentence summary."
+author_ico: "/assets/images/<avatar>.jpg"
 ---
 
-# Content here
+Content...
 ```
 
-Add to navigation in `_config.yml`:
+To show the blog in the navigation, add `blog.md` to `header_pages` in `_config.yml`.
 
-```yaml
-header_pages:
-  - index.md
-  - presentations.md
-  - new-page.md
-```
+### Partners and logos
 
+Edit `consortium.md` for partner descriptions, contacts and the advisory group. Logos go in `assets/images/`; the footer is in `_includes/footer.html`. The header uses a text logo (`_includes/header.html`); swap in an image once a DART logo exists.
 
-## Support
+## Deployment
 
-For questions or issues:
-- **Project Contact:** bugatti [at] cs [dot] kuleuven [dot] be (email obfuscated for privacy)
-- **Technical Issues:** Open an issue in this repository
+Pushing to `main` triggers the GitHub Actions workflow, which builds the site and deploys it to GitHub Pages. The custom domain is set in `CNAME`.
 
 ## License
 
-Content © KU Leuven - DistriNet. All rights reserved.
+Content © KU Leuven - DistriNet and VUB - Software Languages Lab. All rights reserved.
