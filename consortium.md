@@ -67,7 +67,7 @@ permalink: /consortium/
   <p>The Software Languages Lab at the Vrije Universiteit Brussel has a strong track record in security and reactive systems. The lab has deep expertise in event-driven architectures, rule-based systems and declarative programming, applied to modelling and analysing complex, dynamic software systems. SOFT is a member of the Cybersecurity Research Flanders programme.</p>
   <p>Within DART, SOFT translates this expertise into rule systems for detection and playbooks for automated response. It builds on earlier work such as the course <em>Reactive Security for Reactive Systems</em>, and on projects in which end users without a programming background configure systems declaratively (SWAMP, FLAMENCO). SOFT also has ongoing research on event-based and AI-assisted application security testing.</p>
 
-  <p><strong>Team:</strong> Jens Nicolay <!-- TODO: complete / adjust the team list --></p>
+  <p><strong>Team:</strong> Jens Nicolay, Nivedita Yadav <!-- TODO: complete / adjust the team list --></p>
   <p><strong>Website:</strong> <a href="https://soft.vub.ac.be/" target="_blank" style="color: #1565c0; text-decoration: underline;">soft.vub.ac.be</a></p>
 </div>
 
