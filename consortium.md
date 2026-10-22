@@ -95,19 +95,19 @@ DART addresses Flemish SMEs and non-profit organisations facing higher expectati
 - BLU3
 - E-Bo Enterprises
 - Guardiant Cyberdefense
-- Quant ICT
 - Resilient Security
 - Secudea
+- Snapcore
+- Spinae
 
 **Organisations with in-house or hybrid security operations**
 
 - CAW Oost-Vlaanderen
 - COMmeto
-- Enkryptify
 - Heynen
 - Nextensa
 - Politiezone Gent
-- Sint-Trudo Ziekenhuis
+- Rel-I
 - Televic Rail
 
 **Dissemination partners**
