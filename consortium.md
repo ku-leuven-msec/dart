@@ -32,7 +32,7 @@ permalink: /consortium/
     <span style="font-size: 1.5em; color: #0078b4;">📧</span>
     <div>
       <div style="font-weight: 600; color: #1565c0;">Contact person</div>
-      <div style="margin-bottom: 0.2em;">[Name]</div>
+      <div style="margin-bottom: 0.2em;">Vincent Naessens</div>
       <a href="#" style="color: #1565c0; text-decoration: underline;" onclick="window.location.href='mailto:'+'vincent.naessens'+'@'+'kuleuven.be';return false;">vincent.naessens [at] kuleuven [dot] be</a>
     </div>
   </div>
@@ -59,7 +59,7 @@ permalink: /consortium/
     <span style="font-size: 1.5em; color: #0078b4;">📧</span>
     <div>
       <div style="font-weight: 600; color: #1565c0;">Contact person</div>
-      <div style="margin-bottom: 0.2em;">[Name]</div>
+      <div style="margin-bottom: 0.2em;">Jens Nicolay</div>
       <a href="#" style="color: #1565c0; text-decoration: underline;" onclick="window.location.href='mailto:'+'jens.nicolay'+'@'+'vub.be';return false;">jens.nicolay [at] vub [dot] be</a>
     </div>
   </div>
@@ -136,7 +136,7 @@ If your organisation would like to join the DART advisory group, please contact 
   <span style="font-size: 1.5em; color: #0078b4;">📧</span>
   <div>
     <div style="font-weight: 600; color: #1565c0;">Contact person</div>
-    <div style="margin-bottom: 0.2em;">[Name] <span style="color: #888; font-size: 0.95em;">(KU Leuven, DistriNet, Campus Gent)</span></div>
+    <div style="margin-bottom: 0.2em;">Tom Cordemans <span style="color: #888; font-size: 0.95em;">(KU Leuven, DistriNet, Campus Gent)</span></div>
     <a href="#" style="color: #1565c0; text-decoration: underline; display: block;" onclick="window.location.href='mailto:'+'tom.cordemans'+'@'+'kuleuven.be';return false;">tom.cordemans [at] kuleuven [dot] be</a>
   </div>
 </div>
