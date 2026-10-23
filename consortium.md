@@ -93,8 +93,8 @@ DART addresses Flemish SMEs and non-profit organisations facing higher expectati
 
 - Able (AXS Guard)
 - BLU3
-- E-Bo Enterprises
 - Guardiant Cyberdefense
+- Nomios
 - Resilient Security
 - Secudea
 - Snapcore
