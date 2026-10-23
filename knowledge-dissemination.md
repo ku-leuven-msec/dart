@@ -22,7 +22,7 @@ The advisory group meets at least three times a year. It acts as a sounding boar
       [Slides and materials]({{ '/knowledge-dissemination/<file-name>/' | relative_url }})
 -->
 
-## 1st Advisory Group Meeting – Kickoff (Date TBA)
+## 1st Advisory Group Meeting – Kickoff (10 November 2026)
 
 <div style="margin: 2em 0; padding: 1.5em; background: #f9f9f9; border-radius: 8px; border-left: 4px solid #0096d2;" markdown="1">
 
@@ -30,9 +30,9 @@ The advisory group meets at least three times a year. It acts as a sounding boar
 
 - Welcome
 - Introduction of KU Leuven (DistriNet@Gent) and VUB (Software Languages Lab)
-- The DART project: goals, approach and roadmap
+- Roadmap of the DART project
 - Short introduction of the advisory group members
-- Survey and interviews: detection and response needs (WP1)
+- Project approach and key focus areas
 - Feedback
 
 </div>
